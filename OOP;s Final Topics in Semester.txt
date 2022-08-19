@@ -1,0 +1,25 @@
+Friend functions
+
+Pure virtual / virtual
+
+Inheritance
+
+Function overloading
+
+Function overriding
+
+Abstract classes
+
+Interface
+ 
+Exceptional handling
+
+Final keyword
+
+Aggregation and composition
+
+For programming
+
+Run ?? time polymorphism 
+
+File ?? handling
