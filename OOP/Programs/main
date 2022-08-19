@@ -1,0 +1,11 @@
+#include<iostream>
+#include"class.h"
+using namespace std;
+int main()
+{
+			Result a;
+	a.input();
+	a.output();
+	int s=a.total();
+	a.avg(s);
+}

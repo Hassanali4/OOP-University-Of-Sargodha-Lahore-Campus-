@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+class mark{
+	public:
+	string name;
+	int id;
+	int m[4];
+};
+mark input(mark a)
+{
+	int i;
+	cout<<"enter the id=";
+	cin>>a.id;
+	cout<<"enter the name is ";
+	cin>>a.name;
+	for(i=0;i<4;i++)
+	{
+		cout<<"enter the Marks "<<i+1<<" subject= ";
+		cin>>a.m[i];
+	}
+	return a;
+}
+void display(mark a)
+{
+	int i,s=0;
+	cout<<"ID= "<<a.id<<endl;
+	cout<<"Name is "<<a.name<<endl;
+	for(i=0;i<4;i++)
+	{
+		cout<<"Marks "<<i+1<<" is "<<a.m[i]<<endl;
+		s=s+a.m[i];
+
+		}
+		cout<<"Total Marks="<<s;	
+}
+int main()
+{
+	mark b;
+	b=input(b);
+	display(b);
+}

@@ -1,0 +1,63 @@
+#include<iostream>
+using namespace std;
+struct marks{
+	string name;
+	int id;
+	int m[4];
+	void input();
+	void display();
+};
+void marks::inputData()
+{
+	int i,a=1;
+	cout<<"Enter the id:";
+	cin>>id;
+	cout<<"Enter your Name : ";
+	cin>>name;
+	for(i=0;i<4;i++)
+	{
+		if(a==1)
+			cout<<"Enter Marks of "<<a<<"st Subject are:";
+		if(a==2)
+			cout<<"Enter Marks of "<<a<<"nd Subject are:";
+		if(a==3)
+			cout<<"Enter Marks of "<<a<<"rd Subject are:";
+		if(a==4)
+			cout<<"Enter Marks of "<<a<<"th Subject are:";
+		if(a==5)
+			cout<<"Enter Marks of "<<a<<"th Subject are:";
+		a++;
+		cin>>m[i];
+	}
+}
+void marks::showData()
+{
+	int i,s=0;
+	cout<<"ID= "<<id<<endl;
+	cout<<"Name is "<<name<<endl;
+	for(i=0;i<4;i++)
+	{
+		
+		if(a==1)
+			cout<<"Marks of "<<a<<"st are Subject are:"<<marks[i];
+		if(a==2)
+			cout<<"Marks of "<<a<<"nd are Subject are:"<<marks[i];
+		if(a==3)
+			cout<<"Marks of "<<a<<"rd are Subject are:"<<marks[i];
+		if(a==4)
+			cout<<"Marks of "<<a<<"th are Subject are:"<<marks[i];
+		if(a==5)
+			cout<<"Marks of "<<a<<"th are Subject are:"<<marks[i];
+		a++;
+		s=s+m[i];
+
+		}
+		cout<<"Total Marks="<<s;	
+}
+
+int main()
+{
+	marks b;
+	b.input();
+	b.display();
+}

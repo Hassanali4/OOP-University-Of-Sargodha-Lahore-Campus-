@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+struct Student{
+	int id;
+	char name[100];
+	int marks[4];
+};
+Student Get_Data(Student x);
+void Display_Data(Student x);
+int main()
+{
+	Student a;
+	a=Get_Data(a);
+	Display_Data(a);
+	return 0;
+}
+Student Get_Data(Student x)
+{
+	int i;
+	cout<<"Enter ID: ";
+	cin>>x.id;
+	cout<<"ENter the Name: ";
+	cin>>x.name;
+	for(i=0 ; i<4 ; i++)
+	{
+		cout<<"Enter Subject "<<i+1<<" Marks: ";
+		cin>>x.marks[i];
+	}
+	return x;
+}
+void Display_Data(Student x)
+{
+	int i,sum=0;
+	cout<<"Id: "<<x.id;
+	cout<<"\nName: "<<x.name;
+	for(i=0 ; i<4 ; i++)
+	{
+		cout<<"\nSubject "<<i+1<<" Marks: "<<x.marks[i];
+		sum=sum+x.marks[i];
+	}
+	cout<<"\nTotal Marks: "<<sum;
+}

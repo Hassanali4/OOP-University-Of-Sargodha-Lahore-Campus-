@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+class print{
+		private:
+			string name;
+		public:
+		void input(string name)
+		{
+			this->name=name;
+		}
+		void display()
+		{
+			cout<<"Name is "<<name;
+		}
+};
+int main()
+{
+	string x;
+	cout<<"Enter the  Name ";
+	getline(cin,x);
+	print S;
+	S.input(x);
+	S.display();
+}
+

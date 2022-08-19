@@ -1,0 +1,11 @@
+#include<iostream>
+#include"maxmin.h"
+using namespace std;
+int main()
+{
+	arr a;
+	a.input();
+	a.output();
+	a.max();
+	a.min();
+}
